@@ -1,5 +1,5 @@
 import React from "react";
-
+import Operators from "./Operators";
 const OperatorButton = () => {
   return (
     <>
@@ -7,3 +7,4 @@ const OperatorButton = () => {
     </>
   );
 };
+export default OperatorButton;
