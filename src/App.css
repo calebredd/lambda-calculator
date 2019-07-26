@@ -42,10 +42,7 @@ body {
 }
 
 .specialButtons {
-  display: flex;
   width: 90%;
-  justify-content: space-evenly;
-
 }
 
 .specialBtn {
@@ -55,8 +52,6 @@ body {
 
 .numberButtons {
   width: 90%;
-  display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 

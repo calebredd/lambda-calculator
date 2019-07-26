@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import numbers from "../../../data";
+import {numbers} from "../../../data";
 //import any components needed
 //Import your array data to from the provided data file
 const Numbers = () => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = useState(numbers);
-
   return (
     <div>
       {numbers.map(number => {
-        if (number != 0) {
+        if (number !== "0") {
           return <button className="numberBtn btn">{number}</button>;
         } else {
           return <button className="numberBtn btn zero">{number}</button>;
