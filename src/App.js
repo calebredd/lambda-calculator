@@ -6,9 +6,9 @@ import Display from "./components/DisplayComponents/Display";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-// import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
-// import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
-// import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton";
+import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
+import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
+import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton";
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -20,41 +20,16 @@ function App() {
   return (
     <div className="container">
       <div className="App">
-      <Logo />
+        <Logo />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display />
         <div className="buttons">
           <div className="leftColumn">
-            {/* <SpecialButton/> */}
-            <div className="specialButtons">
-              <button className="specialBtn btn">C</button>
-              <button className="specialBtn btn">X/-</button>
-              <button className="specialBtn btn">%</button>
-            </div>
-            {/* <NumberButton/> */}
-            <div className="numberButtons">
-              <button className="numberBtn btn">1</button>
-              <button className="numberBtn btn">2</button>
-              <button className="numberBtn btn">3</button>
-              <button className="numberBtn btn">4</button>
-              <button className="numberBtn btn">5</button>
-              <button className="numberBtn btn">6</button>
-              <button className="numberBtn btn">7</button>
-              <button className="numberBtn btn">8</button>
-              <button className="numberBtn btn">9</button>
-              <button className="numberBtn btn zero">0</button>
-              <button className="numberBtn btn">.</button>
-            </div>
+            <SpecialButton />
+            <NumberButton />
           </div>
           <div className="rightColumn">
-            {/* <OperatorButton/> */}
-            <div className="operatorButtons">
-              <button className="operatorBtn btn">/</button>
-              <button className="operatorBtn btn">X</button>
-              <button className="operatorBtn btn">-</button>
-              <button className="operatorBtn btn">+</button>
-              <button className="operatorBtn btn">=</button>
-            </div>
+            <OperatorButton />
           </div>
         </div>
       </div>
