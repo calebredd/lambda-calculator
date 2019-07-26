@@ -33,7 +33,6 @@ function App() {
           </div>
         </div>
       </div>
-      <img src="https://tk-assets.lambdaschool.com/67a0a891-ba8c-429e-8d33-bc9e5b9f4e7c_ScreenShot2019-07-02at5.16.56PM.png" alt="finished calculator" width="400px" />
     </div>
   );
 }
