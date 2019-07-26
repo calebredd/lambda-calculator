@@ -2,29 +2,40 @@ body {
   background: black;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  line-height: 75px;
+  font-size: 40px;
+}
+
 .App {
-  border: 1px solid cyan;
-  background: red;
+  border: 1px solid #3DB5E5;
+  background: #BA1234;
   padding: 10px;
   border-radius: 5px;
-  width: 50vw;
-  height: auto;
+  width: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
 }
 
 .logo {
-  margin-top: 10px;
+  margin: 20px auto 0px;
   height: 30px;
 }
 
 .display {
   color: white;
-  background: brown;
-  width: 90%;
-  margin: 10px auto;
-  border-radius: 20px;
-  padding: 10px;
+  background: #2E2829;
+  width: 310px;
+  height: 85px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-top-right-radius: 30%100%;
+  border-bottom-right-radius: 30%100%;
+  border-top-left-radius: 30%100%;
+  border-bottom-left-radius: 30%100%;
   text-align: right;
 }
 
@@ -37,27 +48,25 @@ body {
   display: flex;
   flex-direction: column;
   width: 75%;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .specialButtons {
-  width: 90%;
+  width: 100%;
+  display:flex;
+  flex-direction:row;
 }
 
 .specialBtn {
-  background: blue;
-  width: 32%;
+  background: #2061B0;
 }
 
 .numberButtons {
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
 .numberBtn {
-  background: rgb(24, 23, 116);
-  width: 32%;
+  background: #113C78;
 }
 
 
@@ -66,25 +75,29 @@ body {
 }
 
 .operatorBtn {
-  background: rgb(4, 80, 80);
+  background: #3DB5E5;
   width: 100%;
 }
 
 .operatorButtons {
-  width: 90%;
+  width: 100%;
   display: flex;
+  align-content: space-evenly;
   flex-direction: column;
 }
 
 .btn {
-  border-radius: 50%;
-  padding: 10px;
-  margin: 5px auto;
   box-shadow: 1px 2px 2px black;
   color: white;
+  font-size:35px;
   border: none;
-  height: auto;
-  font-size: 16px;
+  height: 75px;
+  width:75px;
+  margin:5px;
+  border-top-right-radius: 100%100%;
+  border-bottom-right-radius: 100%100%;
+  border-top-left-radius: 100%100%;
+  border-bottom-left-radius: 100%100%;
 }
 
 .btn:active {
@@ -92,5 +105,9 @@ body {
 }
 
 .zero {
-  width: 64%;
+  width: 166px;
+  border-top-right-radius: 50%100%;
+  border-bottom-right-radius: 50%100%;
+  border-top-left-radius: 50%100%;
+  border-bottom-left-radius: 50%100%;
 }
