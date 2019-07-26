@@ -5,7 +5,7 @@ export default class Display extends React.Component {
     return (
       <div className="display">
         {/* Display any props data here */}
-        {this.props.number}
+        {this.props.number+this.props.secondNumber}
       </div>
     );
   }
