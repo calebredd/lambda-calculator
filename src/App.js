@@ -18,8 +18,9 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
-  const [number, setNumber] = useState(.5);
+  const [number, setNumber] = useState(0);
   const[secondNumber, setSecondNumber]=useState(0);
+  const[previous, setPrevious]=useState(0);
   const sum=add(number,secondNumber);
   const diff=subtract(number,secondNumber);
   const times=multiply(number,secondNumber);
@@ -35,20 +36,26 @@ function App() {
         <Logo />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display 
-        display={sum} 
+        display={number}
         />
         <div className="buttons">
           <div className="leftColumn">
             <SpecialButton />
             <NumberButton 
-            // number={number}
-            // setNumber={setNumber}
+            first={number}
+            setFirst={setNumber}
             // secondNumber={secondNumber}
             // setSecondNumber={setSecondNumber}
             />
           </div>
           <div className="rightColumn">
-            <OperatorButton />
+            <OperatorButton
+            number={number}
+            setNumber={setNumber}
+            secondNumber={secondNumber}
+            setSecondNumber={setSecondNumber} 
+            previous={previous}
+            setPrevious={setPrevious}/>
           </div>
         </div>
       </div>

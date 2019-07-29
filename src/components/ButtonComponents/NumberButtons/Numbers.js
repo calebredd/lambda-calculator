@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import {numbers} from "../../../data";
 //import any components needed
 //Import your array data to from the provided data file
-const Numbers = () => {
+const Numbers = (first, setFirst) => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = useState(numbers);
   return (
     <div>
       {numbers.map(number => {
         if (number !== "0") {
-          return <button className="numberBtn btn">{number}</button>;
+          return <button className="numberBtn btn" onClick={()=>{first.first.setFirst(first.first.first+number)}}>{number}</button>;
         } else {
-          return <button className="numberBtn btn zero">{number}</button>;
+          return <button className="numberBtn btn zero" onClick={() => { first.first.setFirst(first.first.first + number) }}>{number}</button>;
         }
       })}
 
